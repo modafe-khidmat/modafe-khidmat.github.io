@@ -5,10 +5,10 @@ import { Button } from "@/components/ui/button";
 const products = [
   {
     icon: Shield,
-    title: "Automated License System",
+    title: "PDF Merger",
     description:
-      "Secure Node.js based licensing for offline and online activation. Protect your software with hardware-bound keys, usage analytics, and automated delivery.",
-    link: "https://buy.stripe.com/placeholder",
+      "A powerful, secure, and offline-capable PDF merging tool. Combine multiple PDF files and images into a single document with ease.",
+    link: "https://github.com/modafe-khidmat/pdf-merger",
   },
   {
     icon: Bot,
@@ -54,7 +54,7 @@ const ProductShowcase = () => (
                 className="w-full bg-blurple hover:bg-blurple/90 text-blurple-foreground rounded-lg py-5"
               >
                 <a href={product.link} target="_blank" rel="noopener noreferrer">
-                  Buy Now
+                  View Project
                 </a>
               </Button>
             </CardFooter>
