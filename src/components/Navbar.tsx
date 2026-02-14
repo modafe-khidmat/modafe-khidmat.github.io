@@ -5,6 +5,7 @@ import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/s
 import { Link, useNavigate, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
 
