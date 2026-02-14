@@ -1,4 +1,5 @@
 import { Shield, Bot } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -8,14 +9,16 @@ const products = [
     title: "PDF Merger",
     description:
       "A powerful, secure, and offline-capable PDF merging tool. Combine multiple PDF files and images into a single document with ease.",
-    link: "https://github.com/modafe-khidmat/pdf-merger",
+    internalLink: "/pdf-merger",
+    paymentLink: "https://buy.stripe.com/placeholder",
   },
   {
     icon: Bot,
     title: "E-Commerce AI Agent",
     description:
       "Automated price tracking and platform matching powered by AI. Monitor competitors, detect price changes, and optimize your listings across marketplaces.",
-    link: "https://buy.stripe.com/placeholder",
+    internalLink: "/ecommerce-agent",
+    paymentLink: "https://buy.stripe.com/placeholder",
   },
 ];
 
@@ -48,13 +51,20 @@ const ProductShowcase = () => (
                 {product.description}
               </CardDescription>
             </CardContent>
-            <CardFooter>
+            <CardFooter className="flex flex-col gap-3">
               <Button
                 asChild
                 className="w-full bg-blurple hover:bg-blurple/90 text-blurple-foreground rounded-lg py-5"
               >
-                <a href={product.link} target="_blank" rel="noopener noreferrer">
-                  View Project
+                <Link to={product.internalLink}>View Project</Link>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                className="w-full rounded-lg py-5 border-blurple/20 hover:bg-blurple/5"
+              >
+                <a href={product.paymentLink} target="_blank" rel="noopener noreferrer">
+                  Buy Now
                 </a>
               </Button>
             </CardFooter>
