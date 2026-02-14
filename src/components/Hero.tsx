@@ -25,6 +25,13 @@ const Hero = () => {
       />
 
       <div className="relative z-10 container mx-auto px-6 text-center max-w-3xl">
+        <div className="flex justify-center mb-8">
+          <img
+            src="/assets/mode_stack.png"
+            alt="Mode Stack Logo"
+            className="h-52 w-auto rounded-3xl drop-shadow-[0_0_25px_rgba(255,255,255,0.2)]"
+          />
+        </div>
         <div className="inline-block mb-6 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 text-sm text-hero-foreground/60">
           Digital Solutions & Automation
         </div>
