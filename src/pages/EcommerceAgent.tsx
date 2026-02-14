@@ -38,10 +38,20 @@ const EcommerceAgent = () => {
                                 </li>
                             ))}
                         </ul>
-                        <div className="pt-4 flex flex-col sm:flex-row gap-4">
-                            <Button asChild size="lg" className="bg-blurple hover:bg-blurple/90 text-white">
-                                <a href="#" className="cursor-not-allowed opacity-50">
-                                    Waitlist Access
+                        <div className="pt-4 flex flex-col sm:flex-row gap-4 flex-wrap">
+                            <Button asChild size="lg" className="bg-[#ee4d2d] hover:bg-[#ee4d2d]/90 text-white">
+                                <a href="https://shopee.com/placeholder" target="_blank" rel="noopener noreferrer">
+                                    Buy on Shopee
+                                </a>
+                            </Button>
+                            <Button asChild size="lg" className="bg-[#000000] hover:bg-[#000000]/80 text-white">
+                                <a href="https://tiktok.com/placeholder" target="_blank" rel="noopener noreferrer">
+                                    Buy on TikTok
+                                </a>
+                            </Button>
+                            <Button asChild size="lg" className="bg-[#635bff] hover:bg-[#635bff]/90 text-white">
+                                <a href="https://buy.stripe.com/placeholder" target="_blank" rel="noopener noreferrer">
+                                    Pay with Stripe
                                 </a>
                             </Button>
                         </div>
