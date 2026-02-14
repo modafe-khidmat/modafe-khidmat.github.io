@@ -38,6 +38,11 @@ All colors MUST be HSL.
 
     --radius: 0.5rem;
 
+    --blurple: 231 60% 65%;
+    --blurple-foreground: 0 0% 100%;
+    --hero-bg: 228 50% 8%;
+    --hero-foreground: 210 40% 98%;
+
     --sidebar-background: 0 0% 98%;
 
     --sidebar-foreground: 240 5.3% 26.1%;
