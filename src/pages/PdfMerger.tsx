@@ -22,9 +22,19 @@ const PdfMerger = () => {
                 </header>
 
                 <div className="grid md:grid-cols-2 gap-12 items-center mb-24">
-                    <div className="relative aspect-video bg-muted/30 rounded-xl overflow-hidden border border-border/50 shadow-sm flex items-center justify-center group">
-                        <div className="text-muted-foreground/40 text-sm font-medium">Application Screenshot Placeholder</div>
-                        {/* Replace with actual screenshot: <img src="/pdf-merger-screenshot.png" alt="App Screenshot" className="w-full h-full object-cover" /> */}
+                    <div className="relative aspect-video bg-gradient-to-br from-muted/50 to-muted/10 rounded-xl overflow-hidden border border-border/50 shadow-2xl flex flex-col group p-4 gap-4">
+                        {/* CSS-only UI Mockup */}
+                        <div className="w-full h-8 bg-muted-foreground/10 rounded-md flex items-center px-3 gap-2">
+                            <div className="w-2.5 h-2.5 rounded-full bg-red-400/50"></div>
+                            <div className="w-2.5 h-2.5 rounded-full bg-yellow-400/50"></div>
+                            <div className="w-2.5 h-2.5 rounded-full bg-green-400/50"></div>
+                        </div>
+                        <div className="flex-1 flex gap-4">
+                            <div className="w-1/4 h-full bg-muted-foreground/5 rounded-md"></div>
+                            <div className="flex-1 h-full bg-muted-foreground/5 rounded-md border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
+                                <div className="text-muted-foreground/30 text-xs font-medium">Drag & Drop Zone</div>
+                            </div>
+                        </div>
                     </div>
                     <div className="space-y-8">
                         <h3 className="text-2xl font-semibold">Key Features</h3>
@@ -42,22 +52,30 @@ const PdfMerger = () => {
                                 </li>
                             ))}
                         </ul>
-                        <div className="pt-4 flex flex-col sm:flex-row gap-4 flex-wrap">
-                            <Button asChild size="lg" className="bg-[#ee4d2d] hover:bg-[#ee4d2d]/90 text-white">
-                                <a href="https://shopee.com/placeholder" target="_blank" rel="noopener noreferrer">
-                                    Buy on Shopee
-                                </a>
-                            </Button>
-                            <Button asChild size="lg" className="bg-[#000000] hover:bg-[#000000]/80 text-white">
-                                <a href="https://tiktok.com/placeholder" target="_blank" rel="noopener noreferrer">
-                                    Buy on TikTok
-                                </a>
-                            </Button>
-                            <Button asChild size="lg" className="bg-[#635bff] hover:bg-[#635bff]/90 text-white">
-                                <a href="https://buy.stripe.com/placeholder" target="_blank" rel="noopener noreferrer">
-                                    Pay with Stripe
-                                </a>
-                            </Button>
+                        <div className="pt-6 space-y-4">
+                            <div className="flex flex-wrap gap-3">
+                                <Button asChild size="lg" className="bg-[#635bff] hover:bg-[#635bff]/90 text-white flex-1 min-w-[200px] h-12 text-base shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5">
+                                    <a href="https://buy.stripe.com/placeholder" target="_blank" rel="noopener noreferrer">
+                                        Pay with Stripe
+                                    </a>
+                                </Button>
+                            </div>
+                            <div className="flex flex-wrap gap-3">
+                                <Button asChild variant="outline" size="sm" className="flex-1 border-[#ee4d2d] text-[#ee4d2d] hover:bg-[#ee4d2d]/10">
+                                    <a href="https://shopee.com/placeholder" target="_blank" rel="noopener noreferrer">
+                                        Buy on Shopee
+                                    </a>
+                                </Button>
+                                <Button asChild variant="outline" size="sm" className="flex-1 border-foreground text-foreground hover:bg-foreground/10">
+                                    <a href="https://tiktok.com/placeholder" target="_blank" rel="noopener noreferrer">
+                                        Buy on TikTok
+                                    </a>
+                                </Button>
+                            </div>
+                            <p className="text-xs text-muted-foreground flex items-center gap-2 pt-2">
+                                <span className="flex items-center"><div className="w-1.5 h-1.5 rounded-full bg-green-500 mr-1.5"></div> Instant Delivery</span>
+                                <span className="flex items-center"><div className="w-1.5 h-1.5 rounded-full bg-green-500 mr-1.5"></div> Secure Payment</span>
+                            </p>
                         </div>
                     </div>
                 </div>
